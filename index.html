@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1"/>
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'/>
+    <title>Maria Alejandra Boada Rodriguez | Ciberseguridad</title>
+    <meta name="description" content="Mi nombre es Maria Alejandra Boada Rodriguez, soy desarrolladora de software apasionada por la ciberseguridad. Cali (Colombia)."/>
+    <meta property="og:locale" content="es_ES"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Maria Alejandra Boada Rodriguez | Ciberseguridad"/>
+    <meta property="og:description" content="Mi nombre es Maria Alejandra Boada Rodriguez, soy desarrolladora de software apasionada por la ciberseguridad. Cali (Colombia)."/>
+    <meta property="og:site_name" content="Maria Alejandra Boada Rodriguez | Ciberseguridad"/>
+    <meta property="article:modified_time" content="2023-12-27T08:25:57+00:00" />
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link rel="apple-touch-icon"/>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <a href="#section1">Sección 1</a>
+        <a href="#section2">Sección 2</a>
+        <a href="#section3">Sección 3</a>
+        <!-- Agrega más enlaces según sea necesario -->
+    </header>
+
+    <div class="section" id="section1">
+        <img src="/img/photo-page.jpg" alt="Descripción de la imagen">
+    </div>
+    <div class="section" id="section2">Sección 2</div>
+    <div class="section" id="section3">Sección 3</div>
+    <!-- Agrega más secciones según sea necesario -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Agrega el comportamiento de desplazamiento suave
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
